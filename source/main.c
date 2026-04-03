@@ -81,11 +81,20 @@ void MainUpdateLoop(pixy_t* cam){
 		int speed1 = speed - speed*sin(angleInRadians);
 		int speed2 = speed + speed*sin(angleInRadians);
 		Steer(angle);
-		HbridgeSpeed(&g_hbridge, speed1, speed2);
+		HbridgeSpeed(&g_hbridge, speed1 - 100, speed2 - 100);
 
 	}
 }
 
+void testMotors(){
+	while(1){
+		int speed = -100;
+		for(int speed = -100; speed ++ < 100;){
+			for(int delay = 800000; delay--;);
+			HbridgleSpeed(speed);
+		}
+	}
+}
 
 int main(void)
 {
@@ -101,6 +110,13 @@ int main(void)
                 CTIMER0_PWM_2_CHANNEL,
                 GPIO0, 24U,
                 GPIO0, 27U);
+
+    // set servo to 0
+//    Steer(0);
+//    for(;;);
+
+
+
     //HbridgeSpeed(&g_hbridge, SPEED_LEFT, SPEED_RIGHT);
     //HbridgeSpeed(&g_hbridge, 0, 0);
     //return 0;
