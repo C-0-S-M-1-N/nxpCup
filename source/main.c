@@ -122,7 +122,8 @@ int main(void)
 
 
     //HbridgeSpeed(&g_hbridge, SPEED_LEFT, SPEED_RIGHT);
-    //HbridgeSpeed(&g_hbridge, 0, 0);
+    HbridgeSpeed(&g_hbridge, 25000, 50000);
+    for(;;);
     //return 0;
 
 //    TestServo();

@@ -95,7 +95,17 @@ source/hbridge.o source/hbridge.d: ../source/hbridge.c \
  C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_clock.h \
  C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_reset.h \
  C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_gpio.h \
- C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_clock.h
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_clock.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\board/peripherals.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_edma.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_edma_core.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_edma_soc.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_common.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_lpi2c.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_lpflexcomm.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_lpi2c_edma.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_lpi2c.h \
+ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_edma.h
 C:\Users\borde\Downloads\NxpCup\nxpcup\source\mcux_config.h:
 C:\Users\borde\Downloads\NxpCup\nxpcup\include/hbridge.h:
 C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_ctimer.h:
@@ -193,3 +203,13 @@ C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_clock.h:
 C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_reset.h:
 C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_gpio.h:
 C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_clock.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\board/peripherals.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_edma.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_edma_core.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_edma_soc.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_common.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_lpi2c.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_lpflexcomm.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_lpi2c_edma.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_lpi2c.h:
+C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_edma.h:

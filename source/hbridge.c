@@ -2,6 +2,7 @@
 #include "fsl_ctimer.h"
 #include "fsl_gpio.h"
 #include "fsl_clock.h"
+#include "peripherals.h"
 
 Hbridge g_hbridge;
 static uint32_t s_srcClockHz;
@@ -62,6 +63,11 @@ void HbridgeSpeed(Hbridge *h, int16_t speed1, int16_t speed2)
 
     CTIMER_UpdatePwmDutycycle(h->pwmPeripheral,h->periodChannel , h->pwm1Channel, duty1);
     CTIMER_UpdatePwmDutycycle(h->pwmPeripheral,h->periodChannel , h->pwm2Channel, duty2);
+
+    uint32_t periodTicks = CTIMER0_PERIPHERAL->MR[CTIMER0_PWM_PERIOD_CH];
+
+    CTIMER0_PERIPHERAL->MR[0] = periodTicks / speed1 - 1;
+    CTIMER0_PERIPHERAL->MR[1] = periodTicks / speed2 - 1;
 }
 
 void HbridgeBrake(Hbridge *h)

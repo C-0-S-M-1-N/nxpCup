@@ -1,4 +1,4 @@
 C:\Users\borde\Downloads\NxpCup\nxpcup\drivers/fsl_gpio.h:345:20:GPIO_PinWrite	24	static
-../source/hbridge.c:9:6:HbridgeInit	40	static
-../source/hbridge.c:30:6:HbridgeSpeed	24	static
-../source/hbridge.c:67:6:HbridgeBrake	16	static
+../source/hbridge.c:10:6:HbridgeInit	40	static
+../source/hbridge.c:31:6:HbridgeSpeed	24	static
+../source/hbridge.c:73:6:HbridgeBrake	16	static
