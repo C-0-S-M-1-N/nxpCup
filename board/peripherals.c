@@ -379,7 +379,7 @@ instance:
       - debugEnable: 'false'
       - ignoreAck: 'false'
       - pinConfig: 'kLPI2C_2PinOpenDrain'
-      - baudRate_Hz: '100000'
+      - baudRate_Hz: '11'
       - realBaudRateCount: []
       - busIdleTimeout_ns: '0'
       - pinLowTimeout_ns: '0'
@@ -389,7 +389,6 @@ instance:
         - enable: 'false'
         - source: 'kLPI2C_HostRequestExternalPin'
         - polarity: 'kLPI2C_HostRequestPinActiveHigh'
-    - quick_selection: 'qs_default'
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
 /* clang-format on */
 const lpi2c_master_config_t LP_FLEXCOMM2_masterConfig = {
@@ -398,7 +397,7 @@ const lpi2c_master_config_t LP_FLEXCOMM2_masterConfig = {
   .debugEnable = false,
   .ignoreAck = false,
   .pinConfig = kLPI2C_2PinOpenDrain,
-  .baudRate_Hz = 100000UL,
+  .baudRate_Hz = 11UL,
   .busIdleTimeout_ns = 0UL,
   .pinLowTimeout_ns = 0UL,
   .sdaGlitchFilterWidth_ns = 0U,

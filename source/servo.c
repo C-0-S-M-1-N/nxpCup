@@ -4,10 +4,10 @@
 
 void Steer(double angle)
 {
-    if (angle > 100.0)  angle = 100.0;
-    if (angle < -100.0) angle = -100.0;
+    if (angle > 50)  angle = 50;
+    if (angle < -25) angle = -25;
 
-    double duty = 5.0 + ((angle + 100.0) / 200.0) * 5.0;
+    double duty = 5.0 + ((angle + 200.0) / 100.0) * 5.0;
 
     uint32_t periodTicks = CTIMER2_PERIPHERAL->MR[CTIMER2_PWM_PERIOD_CH];
     uint32_t pulseTicks = (uint32_t)((periodTicks * (100.0 - duty)) / 100.0);

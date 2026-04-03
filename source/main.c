@@ -26,7 +26,7 @@ const double MAX_SPEED = 200;
 // cod pentru test camera pixy
 void TestCamera(pixy_t* cam){
 	uint16_t vectors[MAX_VECTORS * 4];
-	size_t num_vectors;
+	size_t num_vectors = 0;
 	int angle = 0;
 	while(1){
 		angle = 0;
@@ -131,6 +131,7 @@ int main(void)
     pixy_t cam1;
     pixy_init(&cam1, LPI2C2, 0x54U, &LP_FLEXCOMM2_RX_Handle, &LP_FLEXCOMM2_TX_Handle);
     pixy_set_led(&cam1, 255, 255, 255);
+    PRINTF("Camera Init\r\n");
 
     TestCamera(&cam1);
     while (1)
