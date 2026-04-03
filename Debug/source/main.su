@@ -1,3 +1,4 @@
 ../source/main.c:27:6:TestCamera	160	static
 ../source/main.c:50:6:MainUpdateLoop	184	static
-../source/main.c:90:5:main	208	static
+../source/main.c:89:6:testMotors	24	static
+../source/main.c:103:5:main	208	static

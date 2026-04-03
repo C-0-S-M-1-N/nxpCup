@@ -72,7 +72,7 @@ void MainUpdateLoop(pixy_t* cam){
 
 				if(speed_tmp > MAX_SPEED) speed_tmp = MAX_SPEED;
 				// normalize speed in 0, 180;
-				speed = speed_tmp / MAX_SPEED * 180;
+				speed = speed_tmp / MAX_SPEED * 100;
 
 				PRINTF(" speed: %d %f \r\n", speed, speed_tmp);
 				PRINTF(" steer: %d \r\n\r\n", angle);
@@ -81,7 +81,7 @@ void MainUpdateLoop(pixy_t* cam){
 		int speed1 = speed - speed*sin(angleInRadians);
 		int speed2 = speed + speed*sin(angleInRadians);
 		Steer(angle);
-		HbridgeSpeed(&g_hbridge, speed1 - 100, speed2 - 100);
+		HbridgeSpeed(&g_hbridge, speed1, speed2);
 
 	}
 }
@@ -89,9 +89,13 @@ void MainUpdateLoop(pixy_t* cam){
 void testMotors(){
 	while(1){
 		int speed = -100;
-		for(int speed = -100; speed ++ < 100;){
+		for(speed = 0; speed ++ < 100;){
 			for(int delay = 800000; delay--;);
-			HbridgleSpeed(speed);
+			HbridgeSpeed(&g_hbridge, speed, speed);
+		}
+		for(speed = 100; speed --;){
+			for(int delay = 800000; delay--;);
+			HbridgeSpeed(&g_hbridge, speed, speed);
 		}
 	}
 }
